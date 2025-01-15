@@ -30,6 +30,7 @@ class _CallState extends State<Call> {
 
   @override
   void initState() {
+    super.initState(); 
     getData();
   }
 

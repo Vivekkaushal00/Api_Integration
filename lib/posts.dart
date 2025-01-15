@@ -17,7 +17,6 @@ class _PostsState extends State<Posts> {
     try {
       final Response response =
           await dio.get('https://jsonplaceholder.typicode.com/posts');
-
       if (response.statusCode == 200) {
         setState(() {
           posts = response.data;
